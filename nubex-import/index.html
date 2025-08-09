@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nubex Import - Vapes Premium</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="logo.png" alt="Nubex Import Logo" class="logo-img">
+                    <h1>Nubex Import</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h2>Vapes Premium de Calidad</h2>
+                <p>Descubre nuestra amplia selección de vapes y sabores únicos</p>
+                <div class="hero-cta">
+                    <p class="cta-text">¡Hacé tu pedido o consultá por WhatsApp!</p>
+                    <div class="cta-buttons">
+                        <a href="https://wa.me/5493534018085" class="cta-button primary" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            WhatsApp Manuel
+                        </a>
+                        <a href="https://wa.me/5493535623801" class="cta-button secondary" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            WhatsApp Genaro
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <i class="fas fa-smoking fa-10x"></i>
+            </div>
+        </section>
+
+        <section id="productos" class="products-section">
+            <div class="container">
+                <h2 class="section-title">Nuestros Productos</h2>
+                
+                <!-- Vapes Descartables -->
+                <div class="category-section">
+                    <div class="category-header" onclick="toggleCategory('descartables')">
+                        <h3><i class="fas fa-vape"></i> Vapes Descartables</h3>
+                        <i class="fas fa-chevron-down toggle-icon rotated" id="descartables-icon"></i>
+                    </div>
+                    <div class="category-content active" id="descartables-content">
+                        <!-- Brand Tabs -->
+                        <div class="brand-tabs">
+                            <button class="brand-tab active" onclick="switchBrandTab('ignite')">IGNITE</button>
+                            <button class="brand-tab" onclick="switchBrandTab('elfbar')">ELFBAR</button>
+                        </div>
+
+                        <!-- IGNITE Tab Content -->
+                        <div class="brand-tab-content active" id="ignite-content">
+                            <div class="products-grid">
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="images/ignite-v250-watermelon.jpg" alt="IGNITE V250 Watermelon" class="product-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="photo-placeholder"><i class="fas fa-vape fa-2x"></i></div>
+                                    </div>
+                                    <h5>IGNITE V250</h5>
+                                    <p class="product-flavor">Watermelon Mix</p>
+                                    <p class="product-description">Vape descartable premium</p>
+                                    <div class="price">$25.000</div>
+                                    <div class="product-features">
+                                        <span class="feature">25000 Puffs</span>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="images/ignite-v250-peach-mango.jpg" alt="IGNITE V250 Peach Mango" class="product-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="photo-placeholder"><i class="fas fa-vape fa-2x"></i></div>
+                                    </div>
+                                    <h5>IGNITE V250</h5>
+                                    <p class="product-flavor">Peach Mango</p>
+                                    <p class="product-description">Vape descartable premium</p>
+                                    <div class="price">$25.000</div>
+                                    <div class="product-features">
+                                        <span class="feature">25000 Puffs</span>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="images/ignite-v250-pineapple-kiwi.jpg" alt="IGNITE V250 Pineapple Kiwi" class="product-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="photo-placeholder"><i class="fas fa-vape fa-2x"></i></div>
+                                    </div>
+                                    <h5>IGNITE V250</h5>
+                                    <p class="product-flavor">Pineapple Kiwi Dragon Fruit</p>
+                                    <p class="product-description">Vape descartable premium</p>
+                                    <div class="price">$25.000</div>
+                                    <div class="product-features">
+                                        <span class="feature">25000 Puffs</span>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="images/ignite-v250-blueberry-ice.jpg" alt="IGNITE V250 Blueberry Ice" class="product-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="photo-placeholder"><i class="fas fa-vape fa-2x"></i></div>
+                                    </div>
+                                    <h5>IGNITE V250</h5>
+                                    <p class="product-flavor">Blueberry Ice</p>
+                                    <p class="product-description">Vape descartable premium</p>
+                                    <div class="price">$25.000</div>
+                                    <div class="product-features">
+                                        <span class="feature">25000 Puffs</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ELFBAR Tab Content -->
+                        <div class="brand-tab-content" id="elfbar-content">
+                            <div class="products-grid">
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="images/elfbar-te-30k-blueberry-sour.jpg" alt="ELFBAR TE 30K Blueberry Sour Raspberry" class="product-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="photo-placeholder"><i class="fas fa-vape fa-2x"></i></div>
+                                    </div>
+                                    <h5>ELFBAR TE 30K</h5>
+                                    <p class="product-flavor">Blueberry Sour Raspberry</p>
+                                    <p class="product-description">Vape descartable premium</p>
+                                    <div class="price">$24.000</div>
+                                    <div class="product-features">
+                                        <span class="feature">30000 Puffs</span>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="images/elfbar-ice-king-40k-cherry.jpg" alt="ELFBAR Ice King 40K Cherry Straz" class="product-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="photo-placeholder"><i class="fas fa-vape fa-2x"></i></div>
+                                    </div>
+                                    <h5>ELFBAR Ice King 40K</h5>
+                                    <p class="product-flavor">Cherry Straz</p>
+                                    <p class="product-description">Vape descartable premium</p>
+                                    <div class="price">$28.000</div>
+                                    <div class="product-features">
+                                        <span class="feature">40000 Puffs</span>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="images/elfbar-ice-king-40k-sour-dragon.jpg" alt="ELFBAR Ice King 40K Sour Straw Dragon Fruit" class="product-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="photo-placeholder"><i class="fas fa-vape fa-2x"></i></div>
+                                    </div>
+                                    <h5>ELFBAR Ice King 40K</h5>
+                                    <p class="product-flavor">Sour Straw Dragon Fruit</p>
+                                    <p class="product-description">Vape descartable premium</p>
+                                    <div class="price">$28.000</div>
+                                    <div class="product-features">
+                                        <span class="feature">40000 Puffs</span>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="images/elfbar-ice-king-40k-tiger-blood.jpg" alt="ELFBAR Ice King 40K Tiger Blood" class="product-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="photo-placeholder"><i class="fas fa-vape fa-2x"></i></div>
+                                    </div>
+                                    <h5>ELFBAR Ice King 40K</h5>
+                                    <p class="product-flavor">Tiger Blood</p>
+                                    <p class="product-description">Vape descartable premium</p>
+                                    <div class="price">$28.000</div>
+                                    <div class="product-features">
+                                        <span class="feature">40000 Puffs</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vapes Recargables -->
+                <div class="category-section">
+                    <div class="category-header" onclick="toggleCategory('recargables')">
+                        <h3><i class="fas fa-battery-full"></i> Vapes Recargables</h3>
+                        <i class="fas fa-chevron-down toggle-icon" id="recargables-icon"></i>
+                    </div>
+                    <div class="category-content" id="recargables-content">
+                        <div class="products-grid">
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="images/vaporesso-sky-solo.jpg" alt="Vaporesso Sky Solo" class="product-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                    <div class="photo-placeholder"><i class="fas fa-battery-full fa-2x"></i></div>
+                                </div>
+                                <h5>Vaporesso Sky Solo</h5>
+                                <p class="product-description">Kit De Vapeo</p>
+                                <div class="price">$24.000</div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="images/smok-pen-v2.jpg" alt="Smok Pen V2" class="product-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                    <div class="photo-placeholder"><i class="fas fa-battery-full fa-2x"></i></div>
+                                </div>
+                                <h5>Smok Pen V2</h5>
+                                <p class="product-description">Kit De Vapeo</p>
+                                <div class="price">$20.000</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- E-Liquids -->
+                <div class="category-section">
+                    <div class="category-header" onclick="toggleCategory('liquids')">
+                        <h3><i class="fas fa-tint"></i> E-Liquids</h3>
+                        <i class="fas fa-chevron-down toggle-icon" id="liquids-icon"></i>
+                    </div>
+                    <div class="category-content" id="liquids-content">
+                        <div class="products-grid">
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="images/liquidos-sabores-varios.jpg" alt="Líquidos Sabores Varios" class="product-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                    <div class="photo-placeholder"><i class="fas fa-tint fa-2x"></i></div>
+                                </div>
+                                <h5>Líquidos</h5>
+                                <p class="product-description">Sabores Varios</p>
+                                <div class="price">$11.000</div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="images/sales-nicotina-30ml.jpg" alt="Sales de Nicotina 30ml" class="product-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                    <div class="photo-placeholder"><i class="fas fa-tint fa-2x"></i></div>
+                                </div>
+                                <h5>Sales de Nicotina 30ml</h5>
+                                <p class="product-description">Sales de Nicotina</p>
+                                <div class="price">$12.000</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Contacto</h2>
+                <div class="contact-subtitle">
+                    <p>¡Realizá tu pedido ahora! Contactanos por cualquiera de estas opciones y te respondemos al instante.</p>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h3>Manuel</h3>
+                            <p>+54 9 353 401-8085</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h3>Genaro</h3>
+                            <p>+54 9 353 562-3801</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-instagram"></i>
+                        <div>
+                            <h3>Instagram</h3>
+                            <p>@nubex.import</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mayorista" class="section">
+            <div class="container">
+                <div class="category-header-fixed">
+                    <h2><i class="fas fa-boxes"></i> Ventas al Por Mayor</h2>
+                </div>
+                <div class="category-content-fixed">
+                    <div class="wholesale-intro">
+                        <div class="wholesale-hero">
+                            <div class="wholesale-hero-content">
+                                <h3>¿Tenés un Local o Revendés Vapes?</h3>
+                                <p class="hero-subtitle">¡Accedé a nuestros precios especiales mayoristas!</p>
+                                <p class="hero-description">Trabajamos con revendedores y locales de todo el país. Ofrecemos las mejores marcas con precios competitivos y stock permanente.</p>
+                            </div>
+                            <div class="wholesale-hero-icon">
+                                <i class="fas fa-handshake fa-5x"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="wholesale-benefits">
+                        <h4>Beneficios Mayoristas</h4>
+                        <div class="benefits-grid">
+                            <div class="benefit-card">
+                                <i class="fas fa-percentage"></i>
+                                <h5>Descuentos Especiales</h5>
+                                <p>Precios mayoristas con descuentos progresivos según cantidad</p>
+                            </div>
+                            <div class="benefit-card">
+                                <i class="fas fa-truck-fast"></i>
+                                <h5>Envíos Rápidos</h5>
+                                <p>Envíos a todo el país con seguimiento y entrega garantizada</p>
+                            </div>
+                            <div class="benefit-card">
+                                <i class="fas fa-boxes-stacked"></i>
+                                <h5>Stock Permanente</h5>
+                                <p>Disponibilidad constante de todos nuestros productos</p>
+                            </div>
+                            <div class="benefit-card">
+                                <i class="fas fa-headset"></i>
+                                <h5>Atención Personalizada</h5>
+                                <p>Asesoramiento comercial y soporte técnico dedicado</p>
+                            </div>
+                            <div class="benefit-card">
+                                <i class="fas fa-credit-card"></i>
+                                <h5>Facilidades de Pago</h5>
+                                <p>Múltiples formas de pago y condiciones especiales</p>
+                            </div>
+                            <div class="benefit-card">
+                                <i class="fas fa-chart-line"></i>
+                                <h5>Crecé tu Negocio</h5>
+                                <p>Te ayudamos a maximizar tus ventas y rentabilidad</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="wholesale-cta-section">
+                        <div class="cta-container">
+                            <h4>¡Empezá a Vender con Nosotros!</h4>
+                            <p>Contactanos para recibir nuestra lista de precios mayoristas y condiciones especiales.</p>
+                            <div class="cta-buttons">
+                                <div class="cta-button" onclick="window.open('https://wa.me/5493534018085', '_blank')">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <span>Contactar Manuel</span>
+                                </div>
+                                <div class="cta-button" onclick="window.open('https://wa.me/5493535623801', '_blank')">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <span>Contactar Genaro</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Nubex Import. Todos los derechos reservados.</p>
+            <p class="disclaimer">Producto para mayores de 18 años. Uso responsable.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
